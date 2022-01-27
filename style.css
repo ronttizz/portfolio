@@ -1,0 +1,76 @@
+/* 
+
+TEST LINES - COPY/PASTE TO TEST OR FIND A BOX
+
+border: 5px solid green; 
+
+*/
+
+* {
+  margin: 1px;
+  padding: 1px;
+}
+
+body {
+  background-color: rgb(4, 11, 39);
+  color: rgb(205, 206, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  margin: 0px auto;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero-banner > ul > li {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 8px;
+  background-color: rgb(60, 60, 60);
+}
+
+main {
+  margin: 0px auto;
+  padding: 10px 25px;
+  max-width: 800px;
+}
+
+main img {
+  max-width: 300px;
+  margin: 10px;
+}
+
+main h2 {
+  margin: 10px;
+}
+
+h1 {
+  margin-top: 0px;
+}
+
+footer {
+  background: rgb(75, 75, 75);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.hero-banner {
+  background: url("http://source.unsplash.com/knTKij60p3g/") scroll no-repeat
+    center center/cover;
+  height: 700px;
+}
+
+.hero-name {
+  margin: 100px;
+}
+
+.hero-welcome {
+  margin-top: 100px;
+  font-weight: bolder;
+}
