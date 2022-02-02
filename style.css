@@ -40,10 +40,14 @@ main {
   max-width: 800px;
 }
 
-main img {
+img {
   max-width: 300px;
   margin-right: 20px;
   float: left;
+}
+
+img:nth-of-type(2) {
+  float: right;
 }
 
 main h2 {
@@ -62,8 +66,8 @@ footer {
 }
 
 .hero-banner {
-  background: url("http://source.unsplash.com/knTKij60p3g/") scroll no-repeat
-    center center/cover;
+  background: url("http://source.unsplash.com/knTKij60p3g/") scroll no-repeat center
+    center/cover;
   height: 700px;
 }
 
@@ -78,4 +82,10 @@ footer {
 .section {
   display: inline-block;
   margin: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.section:nth-child(2n) {
+  background-color: rgb(0, 38, 95);
 }
