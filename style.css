@@ -12,6 +12,8 @@ border: 5px solid green;
 }
 
 body {
+  background: url("http://source.unsplash.com/knTKij60p3g/") no-repeat top center fixed;
+  background-size: 100vw;
   background-color: rgb(4, 11, 39);
   color: rgb(205, 206, 255);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -62,7 +64,7 @@ footer {
 }
 
 .hero-banner {
-  background: url("http://source.unsplash.com/knTKij60p3g/") no-repeat center center/cover;
+  /* background: url("http://source.unsplash.com/knTKij60p3g/") no-repeat center center/cover; */
   height: 700px;
 }
 
@@ -83,6 +85,7 @@ footer {
 }
 .section {
   display: inline-block;
+  background-color: rgb(4, 11, 39);
   padding-left: 200px;
   padding-right: 200px;
   padding-bottom: 50px;
