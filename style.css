@@ -59,15 +59,25 @@ input {
   display: inline-block;
 }
 
+button#msg-submit {
+  padding: 5px;
+  margin-top: 1rem;
+}
+
 footer {
   background: rgb(75, 75, 75);
   color: white;
   padding: 15px;
   text-align: center;
+  min-width: 100vw;
 }
 
 .hero-banner {
   min-height: 80vh;
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
 }
 
 .hero-banner > nav > ul > li {
@@ -115,9 +125,4 @@ footer {
   min-width: 100vw;
   background-color: black;
   color: white;
-}
-
-button#msg-submit {
-  padding: 5px;
-  margin-top: 1rem;
 }
