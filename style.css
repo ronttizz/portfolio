@@ -9,6 +9,7 @@ border: 5px solid green;
 * {
   margin: 0px;
   padding: 0px;
+  font-size: 12px;
 }
 
 body {
@@ -17,7 +18,6 @@ body {
   background-color: rgb(4, 11, 39);
   color: rgb(205, 206, 255);
   font-family: "Nunito", sans-serif;
-  font-size: 12px;
   padding: 0px;
 }
 
@@ -35,9 +35,13 @@ main {
   padding: auto auto;
 }
 
+label {
+  display: block;
+}
+
 .image {
   max-width: 300px;
-  margin: 20px;
+  margin: 1.25rem;
   float: left;
 }
 
@@ -63,8 +67,7 @@ footer {
 }
 
 .hero-banner {
-  /* background: url("http://source.unsplash.com/knTKij60p3g/") no-repeat center center/cover; */
-  height: 700px;
+  min-height: 80vh;
 }
 
 .hero-banner > ul > li {
@@ -76,21 +79,21 @@ footer {
 
 .hero-name {
   margin: 40px;
-  font-family: "Titillium Web", sans-serif;
+  /* font-family: "Titillium Web", sans-serif; */
 }
 
 .hero-welcome {
-  margin-top: 200px;
+  margin-top: 50vh;
   font-weight: bolder;
   font-family: "Luckiest Guy", cursive;
 }
 .section {
   display: inline-block;
   background-color: rgb(4, 11, 39);
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
   color: white;
 }
 
@@ -112,4 +115,9 @@ footer {
   min-width: 100vw;
   background-color: black;
   color: white;
+}
+
+button#msg-submit {
+  padding: 5px;
+  margin-top: 1rem;
 }

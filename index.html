@@ -16,10 +16,11 @@
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio Page</title> 
 </head>
-    <body>
-        <header>
-            <div class="hero-banner">
-                <h1 class="hero-name">Toni Nissinen</h1>
+<body>
+    <header>
+        <div class="hero-banner">
+            <h1 class="hero-name">Toni Nissinen</h1>
+            <nav>
                 <ul>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#about">About me</a></li>
@@ -27,51 +28,53 @@
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="https://www.bc.fi/" target="_blank">More about BCH</a></li>
                 </ul>
-                <h1 class="hero-welcome">Welcome to my Portfolio Page</h1>
-            </div>
-        </header>
-        <main>
-                <div class="section" id="projects">
-                    <h2>Projects</h2>
-                    <img src="http://source.unsplash.com/b21Ty33CqVs" alt="Projects" class="image">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore provident suscipit consequatur voluptates quam soluta similique cum ab at expedita, voluptatem voluptate, ex doloribus tenetur velit nihil a mollitia repellendus optio tempore. Neque, eligendi enim? Magni voluptatum ipsum excepturi hic at sapiente fuga tempore, nisi quia, debitis repudiandae consequuntur.</p>
-                </div>
+            </nav>
+            <h1 class="hero-welcome">Welcome to my Portfolio Page</h1>
+        </div>
+    </header>
+    <main>
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <img src="http://source.unsplash.com/b21Ty33CqVs" alt="Projects" class="image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore provident suscipit consequatur voluptates quam soluta similique cum ab at expedita, voluptatem voluptate, ex doloribus tenetur velit nihil a mollitia repellendus optio tempore. Neque, eligendi enim? Magni voluptatum ipsum excepturi hic at sapiente fuga tempore, nisi quia, debitis repudiandae consequuntur.</p>
+        </div>
                 
-                <div class="section" id="about">
-                    <h2>About me</h2>
-                    <img src="http://source.unsplash.com/W8Qqn1PmQH0" alt="About Me" class="image" float="right">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, atque omnis? Quidem quo nobis tempore dignissimos cumque necessitatibus sunt vero deserunt magni officiis, blanditiis laudantium non accusantium ratione! Blanditiis ratione perspiciatis vel voluptate aperiam asperiores, ad magnam vero quidem delectus rerum consequatur, optio pariatur voluptatibus eaque facilis deserunt, mollitia facere.</p>
-                </div>
+        <div class="section" id="about">
+            <h2>About me</h2>
+            <img src="http://source.unsplash.com/W8Qqn1PmQH0" alt="About Me" class="image" float="right">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, atque omnis? Quidem quo nobis tempore dignissimos cumque necessitatibus sunt vero deserunt magni officiis, blanditiis laudantium non accusantium ratione! Blanditiis ratione perspiciatis vel voluptate aperiam asperiores, ad magnam vero quidem delectus rerum consequatur, optio pariatur voluptatibus eaque facilis deserunt, mollitia facere.</p>
+        </div>
                 
-                <div class="section" id="skills">
-                    <h2>Skills</h2>
-                    <img src="http://source.unsplash.com/GI1hwOGqGtE" alt="Skills" class="image">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam natus ratione neque fugit ipsa incidunt, quasi dolores dolorum similique doloremque maxime at repellat officia earum dicta dolorem eveniet expedita assumenda veritatis recusandae est obcaecati exercitationem ipsum sunt. Minus, reprehenderit eveniet odit quia dolor error. Aspernatur at sapiente unde velit rerum!</p>
-                </div>
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <img src="http://source.unsplash.com/GI1hwOGqGtE" alt="Skills" class="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam natus ratione neque fugit ipsa incidunt, quasi dolores dolorum similique doloremque maxime at repellat officia earum dicta dolorem eveniet expedita assumenda veritatis recusandae est obcaecati exercitationem ipsum sunt. Minus, reprehenderit eveniet odit quia dolor error. Aspernatur at sapiente unde velit rerum!</p>
+        </div>
 
-                <div class="contact" id="contact">
-                    <form action="">
-                        <label for="name">Your name</label>
-                        <input type="text" name="name" id="">
-                        <br>
-                        <label for="email">Your Email</label>
-                        <input type="email" name="email" id="">
-                        <br>
-                        <label for="message">Your Message</label>
-                        <input type="textarea" name="message" id="">
-                        <br>
-                        <button type="submit" name="send"> SEND MESSAGE</button>
-                    </form>
-                </div>
+        <div class="contact" id="contact">
+            <form action="">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="msg-sender" size="30">
+                <br>
+                <label for="email">Your Email</label>
+                <input type="email" name="email" id="msg-email" size="30">
+                <br>
+                <label for="message">Your Message</label>
+                <textarea name="message" id="msg-message" autocomplete="off" placeholder="Your Message Here" rows="5" cols="25">
+                </textarea>
+                <br>
+                <button type="submit" name="send" id="msg-submit"> SEND MESSAGE</button>
+            </form>
+        </div>
 
-            </main>
-            <footer>
-            <p>
-                Image copyrights belong to their respective owners.
-            </p>
-            <p>
+    </main>
+    <footer>
+        <p>
+            Image copyrights belong to their respective owners.
+        </p>
+        <p>
                 Toni Nissinen. All rights reserved.
-            </p>
-        </footer>
-    </body>
+        </p>
+    </footer>
+</body>
 </html>
