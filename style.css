@@ -19,13 +19,13 @@ body {
   background-color: rgb(4, 11, 39);
   color: rgb(205, 206, 255);
   font-family: "Nunito", sans-serif;
-  padding: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ************* HEADER ************* */
 
 header {
-  margin: 0px auto;
   padding: 1rem 2rem;
 }
 
@@ -43,6 +43,7 @@ h1 {
   padding: 5vh auto;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .hero-banner > div {
@@ -59,9 +60,8 @@ h1 {
 }
 
 .hero-welcome {
-  font-weight: bolder;
   font-family: "Luckiest Guy", cursive;
-  display: block;
+  display: flex;
   padding: auto;
   margin: auto;
 }
