@@ -75,8 +75,11 @@ h1 {
 img {
   display: block;
   max-width: 25rem;
-  margin: 1.25rem;
-  float: left;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 main h2 {
@@ -97,21 +100,27 @@ button#msg-submit {
   align-items: center;
   border-style: ridge;
   margin: 1rem;
-  padding: 0.75rem;
+  padding: 1.75rem;
+  min-width: 15rem;
 }
 
 #project-container {
   display: flex;
+  max-width: 850px;
+}
+
+#projects {
+  flex-direction: column;
 }
 
 section {
-  display: block;
+  display: flex;
   background-color: rgb(4, 11, 39);
-  padding-left: 15vw;
-  padding-right: 15vw;
-  padding-bottom: 5vh;
-  padding-top: 5vh;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
   color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 section:nth-child(2n) {
@@ -119,8 +128,17 @@ section:nth-child(2n) {
   flex-direction: row-reverse;
 }
 
-section:nth-child(2n) img {
-  float: right;
+.content {
+  display: flex;
+  max-width: 80vw;
+}
+
+.content > div {
+  margin: 0.75rem;
+}
+
+section:nth-child(2n) .content {
+  flex-direction: row-reverse;
 }
 
 #contact {
@@ -143,4 +161,31 @@ footer {
   color: white;
   padding: 15px;
   text-align: center;
+}
+
+@media (max-width: 875px) {
+  img {
+    max-width: 80vw;
+    display: block;
+  }
+
+  #project-container {
+    flex-direction: column;
+  }
+
+  p {
+    display: block;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content > div {
+    margin: 0rem;
+  }
+
+  section:nth-child(2n) .content {
+    flex-direction: column;
+  }
 }
