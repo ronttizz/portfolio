@@ -62,15 +62,10 @@ h1 {
 .hero-welcome {
   font-family: "Luckiest Guy", cursive;
   display: flex;
-  padding: auto;
   margin: auto;
 }
 
 /* ************* MAIN ************* */
-
-main {
-  padding: auto auto;
-}
 
 img {
   display: block;
