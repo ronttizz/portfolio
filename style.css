@@ -29,6 +29,10 @@ header {
   min-width: 100vw;
 }
 
+.hero-name::after {
+  content: "Toni Nissinen";
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -171,6 +175,7 @@ footer {
 
   #project-container {
     flex-direction: column;
+    max-width: 70vw;
   }
 
   p {
@@ -187,5 +192,9 @@ footer {
 
   section:nth-child(2n) .content {
     flex-direction: column;
+  }
+
+  .hero-name::after {
+    content: "TN";
   }
 }
