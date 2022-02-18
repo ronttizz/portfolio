@@ -108,6 +108,11 @@ button#msg-submit {
   min-width: 15rem;
 }
 
+.project img {
+  max-width: 14rem;
+  margin-bottom: 1rem;
+}
+
 #project-container {
   display: flex;
   max-width: 850px;
@@ -176,6 +181,10 @@ footer {
   #project-container {
     flex-direction: column;
     max-width: 70vw;
+  }
+
+  .project img {
+    max-width: 55vw;
   }
 
   p {
