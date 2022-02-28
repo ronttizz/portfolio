@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
       rel="stylesheet"
     />
-    <!-- FONT END -->
+    <!-- FONT LINKING ENDS -->
 
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio Page</title>
@@ -43,18 +43,10 @@
     </header>
 
     <main>
-      <section id="projects">
+      <section id="projects" class="column">
         <h2>Projects</h2>
-        <!-- <img src="http://source.unsplash.com/b21Ty33CqVs" alt="Projects" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore provident
-          suscipit consequatur voluptates quam soluta similique cum ab at expedita,
-          voluptatem voluptate, ex doloribus tenetur velit nihil a mollitia repellendus
-          optio tempore. Neque, eligendi enim? Magni voluptatum ipsum excepturi hic at
-          sapiente fuga tempore, nisi quia, debitis repudiandae consequuntur.
-        </p> -->
-        <div id="project-container">
-          <div class="project">
+        <div id="card-container">
+          <div class="card">
             <img src="http://source.unsplash.com/JMwCe3w7qKk" alt="#" />
             <h4>Project 1</h4>
             <p>
@@ -62,7 +54,7 @@
               laudantium cupiditate eius ratione officiis?
             </p>
           </div>
-          <div class="project">
+          <div class="card">
             <img src="http://source.unsplash.com/KHSPGJ3zP0M" alt="#" />
             <h4>Project 2</h4>
             <p>
@@ -70,7 +62,7 @@
               laudantium cupiditate eius ratione officiis?
             </p>
           </div>
-          <div class="project">
+          <div class="card">
             <img src="http://source.unsplash.com/1sSfrozgiFk" alt="#" />
             <h4>Project 3</h4>
             <p>
@@ -100,23 +92,49 @@
         </div>
       </section>
 
-      <section id="skills">
-        <div class="content">
-          <div>
-            <img src="http://source.unsplash.com/GI1hwOGqGtE" alt="Skills" />
+      <section id="skills" class="column">
+        <!-- <div>
+          <img src="http://source.unsplash.com/GI1hwOGqGtE" alt="Skills" />
+        </div>
+        <div>
+          <h2>Skills</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam natus
+            ratione neque fugit ipsa incidunt, quasi dolores dolorum similique
+            doloremque maxime at repellat officia earum dicta dolorem eveniet expedita
+            assumenda veritatis recusandae est obcaecati exercitationem ipsum sunt.
+            Minus, reprehenderit eveniet odit quia dolor error. Aspernatur at sapiente
+            unde velit rerum!
+          </p>
+        </div> -->
+        
+        <h2>Skills</h2>
+        <!-- <div class="content"> -->
+        <div id="card-container">
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="HTML logo" />
+            <label for="html">
+              <h4>HMTL</h4>
+            </label>
+            <progress id="html" value="90" max="100">90%</progress>
           </div>
-          <div>
-            <h2>Skills</h2>
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS logo" />
+            <label for="css">
+              <h4>CSS</h4>
+            </label>
+            <progress id="css" value="85" max="100">85%</progress>
+            
+          </div>
+          <div class="card">
+            <img src="http://source.unsplash.com/1sSfrozgiFk" alt="#" />
+            <h4>Project 3</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam natus
-              ratione neque fugit ipsa incidunt, quasi dolores dolorum similique
-              doloremque maxime at repellat officia earum dicta dolorem eveniet expedita
-              assumenda veritatis recusandae est obcaecati exercitationem ipsum sunt.
-              Minus, reprehenderit eveniet odit quia dolor error. Aspernatur at sapiente
-              unde velit rerum!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat labore
+              laudantium cupiditate eius ratione officiis?
             </p>
           </div>
-        </div>
+        <!-- </div> -->
       </section>
 
       <section id="contact">
