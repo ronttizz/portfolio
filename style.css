@@ -171,6 +171,12 @@ form {
   align-items: center;
 }
 
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
 /* ************* FOOTER ************* */
 
 footer {
@@ -179,6 +185,8 @@ footer {
   padding: 15px;
   text-align: center;
 }
+
+/* **** RESPONSIVENESS **** */
 
 @media (max-width: 875px) {
   img {
