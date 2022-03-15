@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="School portfolio project">
+    <meta name="author" content="Toni Nissinen">
 
     <!-- FONT LINKING START -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,6 +16,10 @@
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <script
@@ -30,17 +36,21 @@
   <body>
     <header>
       <div class="main-nav">
-        <h1 class="hero-name"></h1>
+        <h1 class="hero-name"><span id="name">Toni Nissinen</span></h1>
         <nav>
+          <button id="mobileButton">
+            <span class="material-icons"> menu </span>
+          </button>
           <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="https://www.bc.fi/" target="_blank">More about BCH</a></li>
+            <li><a href="#projects">| Projects |</a></li>
+            <li><a href="#about">| About me |</a></li>
+            <li><a href="#skills">| Skills |</a></li>
+            <li><a href="./gallery.html">| Gallery |</a></li>
+            <li><a href="#contact">| Contact |</a></li>
+            <li><a href="https://www.bc.fi/" target="_blank">| More about BCH |</a></li>
           </ul>
         </nav>
+
       </div>
       <div class="hero-banner">
         <h1 class="hero-welcome">Welcome to my Portfolio Page</h1>
@@ -98,23 +108,8 @@
       </section>
 
       <section id="skills" class="column">
-        <!-- <div>
-          <img src="http://source.unsplash.com/GI1hwOGqGtE" alt="Skills" />
-        </div>
-        <div>
-          <h2>Skills</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam natus
-            ratione neque fugit ipsa incidunt, quasi dolores dolorum similique
-            doloremque maxime at repellat officia earum dicta dolorem eveniet expedita
-            assumenda veritatis recusandae est obcaecati exercitationem ipsum sunt.
-            Minus, reprehenderit eveniet odit quia dolor error. Aspernatur at sapiente
-            unde velit rerum!
-          </p>
-        </div> -->
-        
         <h2>Skills</h2>
-        <!-- <div class="content"> -->
+
         <div class="card-container">
           <div class="card">
             <label for="html">
@@ -139,7 +134,6 @@
             <progress id="javascript" value="60" max="100">85%</progress>
             
           </div>
-        <!-- </div> -->
       </section>
 
       <section id="contact">
@@ -159,6 +153,8 @@
               id="msg-message"
               autocomplete="off"
               placeholder="Your Message Here"
+              rows="4"
+              cols="21"
             ></textarea>
           </div>
           <div>
@@ -169,7 +165,8 @@
     </main>
     <footer>
       <p>Image copyrights belong to their respective owners.</p>
-      <p>Toni Nissinen. All rights reserved.</p>
+      <p>Toni Nissinen.</p>
     </footer>
   </body>
+  <script src="./script.js"></script>
 </html>
