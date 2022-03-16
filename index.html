@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="School portfolio project">
-    <meta name="author" content="Toni Nissinen">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description" content="School portfolio project" />
+    <meta name="author" content="Toni Nissinen" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <!-- THERE IS A FAVICON BUG IN CHROME ITS NOT SHOWING ON LOCALHOST -->
-    
+
     <!-- FONT LINKING START -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,10 +48,13 @@
             <li><a href="#skills" class="menulink">Skills</a></li>
             <li><a href="./gallery.html" class="menulink">Gallery</a></li>
             <li><a href="#contact" class="menulink">Contact</a></li>
-            <li><a href="https://www.bc.fi/" target="_blank" class="menulink">More about BCH</a></li>
+            <li>
+              <a href="https://www.bc.fi/" target="_blank" class="menulink"
+                >More about BCH</a
+              >
+            </li>
           </ul>
         </nav>
-
       </div>
       <div class="hero-banner">
         <h1 class="hero-welcome">Welcome to my Portfolio Page</h1>
@@ -115,36 +118,36 @@
           <div class="card">
             <label for="html">
               <i class="fa-brands fa-html5 fa-8x"></i>
-              <h4>HMTL</h4>
+              HMTL
             </label>
             <progress id="html" value="90" max="100">90%</progress>
           </div>
           <div class="card">
             <label for="css">
               <i class="fa-brands fa-css3-alt fa-8x"></i>
-              <h4>CSS</h4>
+              CSS
             </label>
             <progress id="css" value="85" max="100">85%</progress>
-            
           </div>
           <div class="card">
             <label for="javascript">
               <i class="fa-brands fa-js fa-8x"></i>
-              <h4>Javascript</h4>
+              Javascript
             </label>
             <progress id="javascript" value="60" max="100">85%</progress>
-            
           </div>
+        </div>
       </section>
 
       <section id="contact">
+        <h2>Contact Me</h2>
         <form>
           <div>
-            <label for="name">Your Name</label>
+            <label for="msg-sender">Your Name</label>
             <input type="text" name="name" id="msg-sender" size="30" />
           </div>
           <div>
-            <label for="email">Your Email</label>
+            <label for="msg-email">Your Email</label>
             <input type="email" name="email" id="msg-email" size="30" />
           </div>
           <div>
@@ -171,6 +174,6 @@
         <span class="material-icons arrowUp"> forward </span>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
