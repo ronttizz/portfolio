@@ -1,23 +1,26 @@
-/* 
-
-TEST LINES - COPY/PASTE TO TEST OR FIND A BOX
-
-border: 5px solid green; 
-
-*/
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --mainFont: "Nunito", sans-serif;
+  --darkBlue: rgb(4, 11, 39);
+  --lightBlueText: rgb(205, 206, 255);
+  --darkBlueBg: rgb(0, 38, 95);
+  --white: white;
+  --lightBlue: rgb(77, 128, 223);
+  --timing: 500ms;
+  --welcomeFont: "Luckiest Guy", cursive;
+}
+
 body {
   background: url("http://source.unsplash.com/knTKij60p3g/") no-repeat top center fixed;
   background-size: cover;
-  background-color: rgb(4, 11, 39);
-  color: rgb(205, 206, 255);
-  font-family: "Nunito", sans-serif;
+  background-color: var(--darkBlue);
+  color: var(--lightBlueText);
+  font-family: var(--mainFont);
   display: flex;
   flex-direction: column;
 }
@@ -47,11 +50,11 @@ header {
   display: none;
   background-color: transparent;
   border: none;
-  color: white;
+  color: var(--white);
 }
 
 .bg {
-  background-color: rgb(0, 38, 95);
+  background-color: var(--darkBlueBg);
 }
 
 .material-icons {
@@ -60,11 +63,11 @@ header {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 nav a:hover {
-  color: rgb(77, 128, 223);
+  color: var(--lightBlue);
 }
 
 h1 {
@@ -86,13 +89,43 @@ h1 {
 }
 
 .main-nav > nav > ul > li:hover {
-  background-color: rgb(4, 11, 39);
+  background-color: var(--darkBlue);
 }
 
 .hero-welcome {
-  font-family: "Luckiest Guy", cursive;
+  font-family: var(--welcomeFont);
   display: flex;
   margin: auto;
+  /* ANIMATION */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    to right,
+    var(--lightBlueText) 0,
+    var(--darkBlue) 10%,
+    var(--lightBlueText) 20%
+  );
+  background-position: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 150px;
+  }
+  100% {
+    background-position: 360px;
+  }
 }
 
 /* ************* MAIN ************* */
@@ -129,7 +162,7 @@ button#msg-submit {
   padding: 0.75rem 1.25rem;
   margin-top: 1rem;
   background-color: rgb(58, 58, 58);
-  color: white;
+  color: var(--white);
   border-radius: 5px;
   border: none;
 }
@@ -161,10 +194,10 @@ button#msg-submit {
 
 section {
   display: flex;
-  background-color: rgb(4, 11, 39);
+  background-color: var(--darkBlue);
   padding-bottom: 4rem;
   padding-top: 4rem;
-  color: white;
+  color: var(--white);
   justify-content: center;
   align-items: center;
 }
@@ -174,7 +207,7 @@ section {
 }
 
 section:nth-child(2n) {
-  background-color: rgb(0, 38, 95);
+  background-color: var(--darkBlueBg);
   flex-direction: row-reverse;
 }
 
@@ -209,7 +242,7 @@ section:nth-child(2n) .content {
 #contact {
   display: block;
   background-color: black;
-  color: white;
+  color: var(--white);
   justify-content: center;
   align-items: center;
 }
@@ -246,6 +279,13 @@ form {
   width: 100%;
   height: 100%;
   border-radius: 7px;
+  transition-duration: var(--timing);
+}
+
+.image-container img:hover {
+  transform: scale(105%);
+  box-shadow: 0 0 5px white;
+  z-index: 10;
 }
 
 .image-container:first-child {
@@ -278,7 +318,7 @@ form {
   justify-content: center;
   align-items: center;
   visibility: hidden;
-  border: 5px solid white;
+  border: 5px solid var(--white);
   cursor: pointer;
 }
 
@@ -286,7 +326,7 @@ form {
 
 footer {
   background: rgb(75, 75, 75);
-  color: white;
+  color: var(--white);
   padding: 15px;
   text-align: center;
 }
@@ -346,7 +386,7 @@ footer {
     position: absolute;
     top: 65px;
     right: 0;
-    background-color: rgb(0, 38, 95);
+    background-color: var(--darkBlueBg);
   }
 
   .main-nav > nav > ul > li {
