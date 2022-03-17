@@ -11,9 +11,13 @@ window.onscroll = () => {
   // using more than 0px is to prevent menu closing by accidental little movement
   if (
     (document.body.scrollTop - scrollPosAlt > 100 &&
-      !links.classList.contains("hidemenu")) ||
+      !links.classList.contains("hideMenu")) ||
     (document.documentElement.scrollTop - scrollPos > 100 &&
-      !links.classList.contains("hidemenu"))
+      !links.classList.contains("hideMenu")) ||
+    (document.body.scrollTop - scrollPosAlt < -100 &&
+      !links.classList.contains("hideMenu")) ||
+    (document.documentElement.scrollTop - scrollPos < -100 &&
+      !links.classList.contains("hideMenu"))
   ) {
     links.classList.add("hideMenu");
   }
@@ -44,4 +48,7 @@ menulinks.forEach((link) => {
 toTopButton.addEventListener("click", () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+  if (!links.classList.contains("hideMenu")) {
+    showMobileMenu();
+  }
 });
